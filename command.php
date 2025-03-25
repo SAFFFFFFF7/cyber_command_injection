@@ -5,5 +5,5 @@ if (isset($_GET['ip'])) {
     echo "<pre>$output</pre>";
 }
 else {
-    echo "Veuillez fournir une adresse IP"
+    echo "Veuillez fournir une adresse IP";
 }
