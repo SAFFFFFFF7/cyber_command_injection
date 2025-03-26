@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+session_regenerate_id(true);
 // Vérifie si l'utilisateur est connecté
 if (!isset($_SESSION['id'], $_SESSION['username'])) {
     header("Location: index.html"); // Redirige vers la page de connexion
