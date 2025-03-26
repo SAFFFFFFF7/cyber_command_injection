@@ -6,7 +6,7 @@ $pdo = new PDO("mysql:host=192.168.194.163;dbname=injection", "root", "secret", 
 $username = htmlspecialchars($_POST['username']);
 $password = htmlspecialchars($_POST['password']);
 
-$stmt = $pdo->prepare("SELECT * FROM users WHERE username = :username AND password = :password");
+$stmt = $pdo->prepare("SELECT * FROM utilisateurs WHERE username = :username AND password = :password");
 $stmt->execute([
     'username' => $username,
     'password' => $password
