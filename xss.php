@@ -20,6 +20,6 @@
 
 <?php
 if (isset($_POST['email'])) {
-    $email = $_POST['email'];
+    $email = htmlspecialchars($_POST['email']);
     echo "Votre email est " . $email;
 }
